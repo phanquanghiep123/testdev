@@ -5,4 +5,9 @@ var app = express();
 app.get('/', function(req, res){
   res.send('hello world');
 });
-app.listen(server_port,server_ip_address);
+app.get('/home', function(req, res){
+  res.send('hello world');
+});
+app.listen(server_port,server_ip_address,function(){
+	console.log("listen server !!!! ");
+});
