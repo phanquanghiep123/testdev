@@ -1,6 +1,10 @@
 function home (){
 	this.extent   = MyController;
 	this.index = function(){
+		var  env = console.log(process.env); 
+		for(var i in env){
+			write(i + ":" + env[i]);
+		}
 		this.load.view("master/layout.html");
 	}
 	this.demomodel = function(){
