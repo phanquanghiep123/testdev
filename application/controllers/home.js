@@ -3,6 +3,7 @@ function home (){
 	this.index = function(){
 		var  env = console.log(process.env); 
 		for(var i in env){
+			write ("dfgdfgdg <br>");
 			write(i + ":" + env[i]);
 		}
 		this.load.view("master/layout.html");
