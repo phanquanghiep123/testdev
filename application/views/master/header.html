@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><?node write(this.data.title);?></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<?node this.LayoutSection("style");?>
+		<link rel="stylesheet" type="text/css" href="<?node write('/skins/css/bootstrap.css');?>">
+		<link rel="stylesheet" type="text/css" href="<?node write('/skins/css/style.css');?>">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	<?node this.LayoutendSection(); ?>
+	<?node this.LayoutSection("script");?>
+		<script type="text/javascript" src="<?node write('/skins/js/jquery-3.2.1.min.js');?>"></script>
+	<?node this.LayoutendSection(); ?>
+</head>
+<body>
+	<div class="construct-block" id="app-phoenix">
+		<div id="header" class="construct-block">
+			<div class="logo"><img src="<?node write('/skins/images/phoenix-logo.png');?>"></div>
+		</div>
+		<div id="main" class="construct-block">

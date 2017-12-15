@@ -1,0 +1,13 @@
+<?node
+	this.ExtenLayout("master/layout.html");
+	this.LayoutSetSection("header");
+		this.load.view("master/header.html",{abc:10000});
+		write("fghfhgfh");
+	this.LayoutendSection();
+	this.LayoutSetSection("main");
+		this.load.view("master/main.html");
+	this.LayoutendSection();
+    this.LayoutSetSection("footer");
+		this.load.view("master/footer.html");
+	this.LayoutendSection();
+?>
