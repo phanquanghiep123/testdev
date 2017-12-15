@@ -1,13 +1,7 @@
 function home (){
 	this.extent   = MyController;
 	this.index = function(){
-		var  env = process.env; 
-		write ("dfgdfgdg <br>");
-		for(var i in env){
-			write ("dfgdfgdg <br>");
-			write(i + ":" + env[i]);
-		}
-		this.load.view("master/layout.html");
+		 
 	}
 	this.demomodel = function(){
 		var that = this;
